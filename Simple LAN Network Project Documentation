@@ -1,0 +1,65 @@
+Simple LAN Network Project Documentation
+Objective: Create a functional LAN with two PCs connected via a switch and verify connectivity.
+
+1. Network Topology Diagram
+
+
+Devices Used:
+
+1 × Cisco 2960 Switch
+
+2 × PCs
+
+Connections:
+
+PC0 → Switch Port Fa0/1 (Straight-through cable)
+
+PC1 → Switch Port Fa0/2 (Straight-through cable)
+
+2. Device Configurations
+PC0 Configuration
+IP Address: 192.168.1.1
+Subnet Mask: 255.255.255.0
+Default Gateway: Not required (same subnet)
+
+Steps:
+Open PC0 > Desktop tab > IP Configuration.
+Set to Static addressing.
+Enter the IP and subnet mask.
+PC1 Configuration
+IP Address: 192.168.1.2
+Subnet Mask: 255.255.255.0
+Default Gateway: Not required (same subnet)
+
+Steps:
+Open PC1 > Desktop tab > IP Configuration.
+Set to Static addressing.
+Enter the IP and subnet mask.
+
+3. Testing Connectivity
+Ping Test from PC0 to PC1
+Open PC0’s Command Prompt.
+
+Run:
+ping 192.168.1.2  
+
+Expected Output:
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=128  
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=128  
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=128  
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=128  
+Ping statistics for 192.168.1.2:  
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)  
+4. Troubleshooting
+Issue: Ping fails.
+
+Solution:
+
+Verify IP addresses and subnet masks on both PCs.
+
+Check cable connections (ensure straight-through cables are used).
+
+Confirm switch port lights are green (indicating active links).
+
+5. Conclusion
+The LAN network is successfully configured. Both PCs can communicate over the switch, confirming proper IP addressing and physical connectivity.
