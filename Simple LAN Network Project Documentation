@@ -3,17 +3,12 @@ Objective: Create a functional LAN with two PCs connected via a switch and verif
 
 1. Network Topology Diagram
 
-
 Devices Used:
-
 1 × Cisco 2960 Switch
-
 2 × PCs
 
 Connections:
-
 PC0 → Switch Port Fa0/1 (Straight-through cable)
-
 PC1 → Switch Port Fa0/2 (Straight-through cable)
 
 2. Device Configurations
